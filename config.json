@@ -1,0 +1,20 @@
+{
+    "email": "(your bot's email)",
+    "password": "(your bot's password)",
+    "cid": "CID_NPC_Athena_Commando_F_RebirthDefault_Henchman", 
+    "bid": "BID_STWHero", 
+    "pid": "Pickaxe_Lockjaw", 
+    "banner": "otherbanner23", 
+    "banner_color": "defaultcolor22", 
+    "level": "450", 
+    "bp_tier": 450, 
+    "status": "( ͡° ͜ʖ ͡°)", 
+    "platform": "PSN", 
+    "friendaccept": "False", 
+    "joinoninvite": "True", 
+    "AdminPassword": "0001", 
+    "FullAccess": [
+        "datalodon"
+    ], 
+    "BlockList": [], 
+    }
