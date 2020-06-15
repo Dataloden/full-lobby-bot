@@ -1,0 +1,5 @@
+              -----instructions for lobby bot-----
+ 1.) create new epic account (if you haven't already)
+ 2.) run INSTALL PACKAGES.bat (to install fortnitepy v2.0.3 and other libraries).
+ 3.) type account details inside of config.json where it says "(your bot's email)/(your bot's password)"
+ 4.) run START BOT.bat
