@@ -14,7 +14,7 @@
     "joinoninvite": "True", 
     "AdminPassword": "0001", 
     "FullAccess": [
-        "datalodon"
+        ""
     ], 
     "BlockList": [], 
     }
