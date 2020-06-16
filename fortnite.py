@@ -266,19 +266,10 @@ async def event_friend_message(message):
                     backendType="AthenaDance"
                 )
                 await client.party.me.clear_emote()
-                if cosmetic.id == "EID_ArtGiant":
-                    if buff == 1:
-                        await client.party.me.set_emote(asset="EID_TakeTheL")
-                        await message.reply('you know the rules and so do i')
-                        print(Fore.GREEN + f"[bot] [{message.author.display_name}] took the l")
-                    else:
-                        await client.party.me.set_emote(asset="EID_NeverGonna")
-                        await message.reply('you know the rules and so do i')
-                        print(Fore.GREEN + f"[bot] [{message.author.display_name}] got rickrolled")
-                else:
-                    await client.party.me.set_emote(asset=cosmetic.id)
-                    await message.reply('Emote set to ' + f'{cosmetic.name}')
-                    print(Fore.GREEN + f"[bot] [{message.author.display_name}] emote set to " + f'{cosmetic.name}')
+                #you are trying to see how i blocked toosie slide, aren't you.
+                await client.party.me.set_emote(asset=cosmetic.id)
+                await message.reply('Emote set to ' + f'{cosmetic.name}')
+                print(Fore.GREEN + f"[bot] [{message.author.display_name}] emote set to " + f'{cosmetic.name}')
             except BenBotAsync.exceptions.NotFound:
                 await message.reply(f'Could not find an emote named: {joinedArguments}')
                 print(Fore.RED + f"[bot] [{message.author.display_name}] could not find emote")
@@ -333,24 +324,7 @@ async def event_friend_message(message):
         else:
             result = args[0].lower()
             rng = random.randint(1, 2)
-            if result == "eid_artgiant":
-                if rng == 2:
-                    await client.party.me.clear_emote()
-                    await client.party.me.set_emote(
-                        asset="EID_NeverGonna"
-                    )
-                    print(Fore.GREEN + f"[bot] [{message.author.display_name}] got rickrolled.")
-                else:
-                    await client.party.me.clear_emote()
-                    await client.party.me.set_emote(
-                        asset="EID_Texting"
-                    )
-                    print(Fore.GREEN + f"[bot] [{message.author.display_name}] took the l.")
-            else:
-                await client.party.me.clear_emote()
-                await client.party.me.set_emote(
-                    asset=args[0]
-                )
+            #again kai, seriously.
                 print(Fore.GREEN + f"[bot] [{message.author.display_name}] emote set to " + f'{args[0]}')
             #await message.reply(Fore.GREEN + f'[bot] [{message.author.display_name}]Emote set to ' + args[0] + ".")
             #print(Fore.GREEN + f' [BOT] [{message.author.display_name}] emote set to ' + args[0])
