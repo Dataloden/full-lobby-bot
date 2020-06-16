@@ -42,13 +42,13 @@ def store_device_auth_details(email, details):
     with open(filename, 'w') as fp:
         json.dump(existing, fp)
 
-email="pedromelendezr@outlook.com"
-password="canada341513349"
+email=""
+password=""
 device_auth_details = get_device_auth_details().get(email, {})
 client = fortnitepy.Client(
     auth=fortnitepy.AdvancedAuth(
-        email="pedromelendezr@outlook.com",
-        password="canada341513349",
+        email="",
+        password="",
         prompt_exchange_code=True,
         delete_existing_device_auths=True,
         **device_auth_details
