@@ -42,13 +42,13 @@ def store_device_auth_details(email, details):
     with open(filename, 'w') as fp:
         json.dump(existing, fp)
 
-email=""
-password=""
+email=data['email']
+password=data['password']
 device_auth_details = get_device_auth_details().get(email, {})
 client = fortnitepy.Client(
     auth=fortnitepy.AdvancedAuth(
-        email="",
-        password="",
+        email=email,
+        password=password,
         prompt_exchange_code=True,
         delete_existing_device_auths=True,
         **device_auth_details
@@ -325,7 +325,7 @@ async def event_friend_message(message):
             result = args[0].lower()
             rng = random.randint(1, 2)
             #again kai, seriously.
-                print(Fore.GREEN + f"[bot] [{message.author.display_name}] emote set to " + f'{args[0]}')
+            print(Fore.GREEN + f"[bot] [{message.author.display_name}] emote set to " + f'{args[0]}')
             #await message.reply(Fore.GREEN + f'[bot] [{message.author.display_name}]Emote set to ' + args[0] + ".")
             #print(Fore.GREEN + f' [BOT] [{message.author.display_name}] emote set to ' + args[0])
             
