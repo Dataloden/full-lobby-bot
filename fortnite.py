@@ -21,7 +21,7 @@ init(autoreset=True)
 from colorama import Fore, Back, Style
 
 
-filename = 'config.json'
+filename = "config.json"
 
 
 def get_device_auth_details():
